@@ -36,5 +36,6 @@ console.log(hasBlue);
 
 
  
-
+// W3, new Maps can all go into an array https://www.w3schools.com/js/js_maps.asp
+// W3, new set can all go into an array https://www.w3schools.com/js/js_sets.asp
 // https://stackoverflow.com/questions/48333685/how-do-i-set-multiple-values-in-a-javascript-map-at-once
