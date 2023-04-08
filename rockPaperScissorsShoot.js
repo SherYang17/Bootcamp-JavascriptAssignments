@@ -36,7 +36,7 @@ function playGround(playerOne, playerTwo) { //accidentally named it playground i
 
 // 1. Define a function called playGame() that takes arguments player1, player2, and playUntil.
 function playGame(playerOne, playerTwo, playUntil = 5) {  // 4. Play a game to 5 wins
-  while (playerOne.score < playUntil && playerTwo.score < playUntil) { // While loop?? It works, if it aint broke dont fix lol. Must be less than so it can be greater than 5
+  while (playerOne.score < playUntil && playerTwo.score < playUntil) { //  // 2. Play rounds until one of the players wins playUntil hands While loop?? It works, if it aint broke dont fix lol. Must be less than so it can be greater than 5
     const winner = playGround(playerOne, playerTwo); // 3. When one player has won enough games, return the winning player object
     if (winner) {
       winner.score++;
