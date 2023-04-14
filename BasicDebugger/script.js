@@ -29,14 +29,13 @@ function tellMeMyStores() {
 }
 } 
 function hasStore() {
-    for (let i = 0; i < storeOwners.length; i++) { //not sure where 2 came from? Removed it to reference the storeowners
+    for (let i = 0; i <= 2; i++) { //not sure where 2 came from? Removed it to reference the storeowners
             let people = storeOwners[i].name;  //have to iterate per store owner
             let person = people; //change it from people.tostring to each array [0].  let person = people[0] brings back first letter in names and [1] breaks.
-        if (person !== "Danny Shavez") { //include this so that his name does not appear from the list. If you include this his name will appear and then appear again with the "owns one too" statement
             console.log("Yes, " + person + " has one"); //has one? sure.
     }
 }
-}
+
 
 tellMeMyStores();
 hasStore();
