@@ -1,6 +1,4 @@
 
-
-document.addEventListener("DOMContentLoaded", function () {
 // Update the 'Apples' item to say 'Granny Smith Apples'
 document.querySelector("#list li:nth-child(2)").innerText = "Granny Smith Apples"; //select the 2nd from list and innerText to rewrite it
 
@@ -27,7 +25,7 @@ for (let item of newItems) { //for each item inside newItems array created above
 
 // // Add the class 'important' to the almonds item.
  document.querySelector("#list li:nth-child(2)").classList.add("important"); //element.classList.add("newClass");, just mounting it on
-});
+
 
 
 
