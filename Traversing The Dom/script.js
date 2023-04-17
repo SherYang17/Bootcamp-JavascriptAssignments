@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 // 1. Get the header element
 const header = document.querySelector("header");
 console.log("This is the Header: ", header);
@@ -30,7 +29,7 @@ console.log("This is the divContainingHighlight: ", divWithHighlight);
 // 7. Get all the sections that contain an H2 (using a single statement)
 const sectionsContainingH2 = document.querySelectorAll("section:has(h2)");
   console.log("This is the sectionsContainingH2: ", sectionsContainingH2);
-});
+
 
 
 
@@ -57,3 +56,7 @@ const sectionsContainingH2 = document.querySelectorAll("section:has(h2)");
 
 
 //document at the dom, dealing with browsers, node is like I dont know what that is. That's why there is error ReferenceError document is not defined. Run code on chrome >:).
+//OMG document.addEventListener("DOMContentLoaded", function() {
+//});
+//
+//had so many issues cause i had script in header
