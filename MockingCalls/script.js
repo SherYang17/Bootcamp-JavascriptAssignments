@@ -48,7 +48,7 @@ fetchUserById(2)
 
 
 
-
+ 
 
 
 // Fetching Data with Promises and the Call Stack
