@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestAPIs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- YOU GET A LIST, YOU GET A LIST, EVERYONE GETS A LIST!
+         All my buttons are in a list but this is the only way to make it stack on top of each other or a div-->
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnGetPost" class="btn btn-primary btn-block w-100" onclick="myButton()">Get all posts</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnId10" class="btn btn-primary btn-block w-100">Get post with id of 10</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnNewPost" class="btn btn-primary btn-block w-100">Create a new post and log the id generated for it by the server</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnReplace12" class="btn btn-primary btn-block w-100">Replace the post with id of 12 and render the responseJSON</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnUpdate12" class="btn btn-primary btn-block w-100">Update the title of post with id of 12 and render responseJSON</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <button id="btnDelete12" class="btn btn-primary btn-block w-100">Delete the post with id of 12 and render a success message</button>
+                        </div>
+                    </li>
+                </ul>
+          </div>
+
+          <div class="col-lg-8">
+                <p id="output"></p>
+          </div>
+        </div>
+    </div>
+
+ 
+      
+
+      
+<!-- 
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <button id="btnGetPost" class="btn btn-primary">Get all posts</button>  
+            <button id="btnId10" class="btn btn-primary">Get post with id of 10</button>
+            <button id="btnNewPost" class="btn btn-primary">Create a new post and log the id generated for it by the server</button>
+            <button id="btnReplace12" class="btn btn-primary">Replace the post with id of 12 and render the responseJSON</button>
+            <button id="btnUpdate12" class="btn btn-primary">Update the title of post with id of 12 and render responseJSON</button> 
+            <button id="btnDelete12" class="btn btn-primary">Delete the post with id of 12 and render a success message</button> 
+          </div>
+          <div class="col-lg-8">
+            <p id="output"></p>
+          </div>
+        </div>
+      </div> -->
+
+     <script src="script.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>
