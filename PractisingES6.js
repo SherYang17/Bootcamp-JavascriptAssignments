@@ -20,7 +20,7 @@ console.log("This is arrow method: " + square(5));
 
 // Use the map method to create a new array called squares that contains the squares of the numbers in the numbers array.
 let squares = [5, 10, 15, 20];
-let squaretwo = squares.map((num) => {
+let squaretwo = numbers.map((num) => {
   return num * num;
 });
 console.log("This is map method :" + squaretwo); // Output: [25, 100, 225, 400]
