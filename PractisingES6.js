@@ -14,20 +14,20 @@ console.log("This is the spread operator method: " + array1); //output below
 
 
 // Define an arrow function called square that accepts a number as an argument and returns the square of the number.
-const square = n => n * n;
+let square = n => n * n;
 console.log("This is arrow method: " + square(5));
 // basically, 5 * 5, then return the value.
 
 // Use the map method to create a new array called squares that contains the squares of the numbers in the numbers array.
-const squares = [5, 10, 15, 20];
-const squaretwo = squares.map((num) => {
+let squares = [5, 10, 15, 20];
+let squaretwo = squares.map((num) => {
   return num * num;
 });
 console.log("This is map method :" + squaretwo); // Output: [25, 100, 225, 400]
 
 
 // Define an arrow function called isEven that accepts a number as an argument and returns true if the number is even, otherwise false.
-const isEven = (num) => {
+let isEven = (num) => {
     return num % 2 === 0;
   };
 
@@ -38,14 +38,14 @@ const isEven = (num) => {
 
 // Use the filter method to create a new array called evenSquares that contains only the even squares from the squares array.
 //const squares used from above
-const evenSquares = squares.filter(num => num % 2 === 0).map(num => num * num);
-console.log("This is filter method: " + evenSquares); // Output: [16, 256]
+let evenSquares = squares.filter(num => num % 2 === 0).map(num => num * num);
+console.log("This is filter method: " + evenSquares); // Output: [100, 400]
 
 
 // Use destructuring assignment to extract the first and second elements of the evenSquares array into constants firstEvenSquare and secondEvenSquare.
-const [firstEvenSquare, secondEvenSquare] = evenSquares;
-console.log("This is the first even square: " + firstEvenSquare); // Output: 16
-console.log("This is the second even square: " + secondEvenSquare); // Output: 256
+let [firstEvenSquare, secondEvenSquare] = evenSquares;
+console.log("This is the first even square: " + firstEvenSquare); // Output : 100
+console.log("This is the second even square: " + secondEvenSquare); // Output: 400
 
 
 
