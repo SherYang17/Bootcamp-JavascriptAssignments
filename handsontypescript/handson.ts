@@ -38,7 +38,7 @@ function findBookById(id: number): Book | undefined { // 4. Define a function fi
 
 function updateBook(book: Book): boolean {                 // 5. Define a function updateBook(book: Book): boolean
   const moreBooks = books.findIndex((b) => b.id === book.id);  // 5. that takes a Book object as a parameter, 
-  if (moreBooks >= 0) {    //  does not equal 1 meaning item does not exist
+  if (moreBooks >= 0) {      // 5. finds the book with the same id in the books array and updates its properties, greater than 0 books
     books[moreBooks] = book; // 5. finds the book with the same id in the books array and updates its properties
     return true;         // 5. The function should return true if the book was updated successfully
   }
@@ -48,15 +48,15 @@ function updateBook(book: Book): boolean {                 // 5. Define a functi
 
 function removeBook(id: number): boolean {                  // 6. Define a function removeBook(id: number): boolean
   const moreBooks = books.findIndex((book) => book.id === id);  // 6. that takes a book id as a parameter 
-  if (moreBooks >= 0) {
-    books.splice(moreBooks, 1);     // 6. and removes the book with the given id from the books array.
+  if (moreBooks >= 0) {         // 6. and removes the book with the given id from the books array, greater than 0 books
+    books.splice(moreBooks, 1); // 6. and removes the book with the given id from the books array.
     return true;                // 6. The function should return true if the book was removed successfully 
   }
   return false;                 // 6. or false if the book was not found.
 
 }
 
-// Test the functions
+// Test the functions, adding a bunch of new books
 const newBook: Book = {
   id: 3,
   title: "Real UFO's In CTAC's Backyard!",
@@ -93,13 +93,13 @@ const bookToUpdate: Book = {
 
 // Test your functions by adding, updating, and removing books, and finding books by their id.
 console.log(books);
-addBook(newBook);
-addBook(newBookTwo);
-addBook(newBookThree);
+addBook(newBook);     // adding
+addBook(newBookTwo);  // adding
+addBook(newBookThree);// adding
 console.log(books);
-console.log(updateBook(bookToUpdate));
-console.log(removeBook(2));
-console.log(findBookById(1));
+console.log(updateBook(bookToUpdate)); // updating
+console.log(removeBook(2));            // removing books 
+console.log(findBookById(1));          // finding books by their id
 console.log(books);
 
 //refer to onenote for all the notes on how to npm and tsc
