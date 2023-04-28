@@ -3,16 +3,16 @@
 const books = [
     {
         id: 1,
-        title: "The boy who cried wolf",
-        author: "John Boy",
-        published: new Date("2012-01-01"),
+        title: "Uncovering UFOs and Bigfoot at SET's Headquarters",
+        author: "Hector Gonzalez",
+        published: new Date("2023-01-01"),
         available: true,
     },
     {
         id: 2,
-        title: "The wolf who cried boy",
-        author: "Jake Wolf",
-        published: new Date("2012-02-02"),
+        title: "The Secret Files of SET: Unearthing Hidden Truths about UFOs, Bigfoot, and Ancient Mysteries",
+        author: "Simone Mayers",
+        published: new Date("2023-02-02"),
         available: true,
     },
 ];
@@ -41,21 +41,38 @@ function removeBook(id) {
 // Test the functions
 const newBook = {
     id: 3,
-    title: "Just a third book",
-    author: "Regina George",
-    published: new Date("1888-01-02"),
+    title: "Real UFO's In CTAC's Backyard!",
+    author: "Erin Woodard",
+    published: new Date("2023-03-02"),
+    available: true,
+};
+const newBookTwo = {
+    id: 4,
+    title: "From Whistleblower to Target: My Journey Exposing Company SET's Involvement With Coffee Conspiracies On Lightly Roasted Coffee",
+    author: "Kevin Hoang",
+    published: new Date("2023-04-02"),
+    available: true,
+};
+const newBookThree = {
+    id: 5,
+    title: "Zombie Outbreak Unveiled: SET's Dark Secrets Revealed",
+    author: "Brandon Wall",
+    published: new Date("2023-05-02"),
     available: true,
 };
 const bookToUpdate = {
-    id: 1,
-    title: "The boy who DIDNT cried wolf",
-    author: "John Boy",
-    published: new Date("2012-01-01"),
-    available: false,
+    id: 4,
+    title: "From Whistleblower to Target: My Journey Exposing Company SET's Involvement With Zombies",
+    author: "Anonymous",
+    published: new Date("2023-04-02"),
+    available: true,
 };
 // Test your functions by adding, updating, and removing books, and finding books by their id.
 console.log(books);
 addBook(newBook);
+addBook(newBookTwo);
+addBook(newBookThree);
+console.log(books);
 console.log(updateBook(bookToUpdate));
 console.log(removeBook(2));
 console.log(findBookById(1));
